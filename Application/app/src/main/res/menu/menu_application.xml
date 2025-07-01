@@ -1,0 +1,169 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_about"
+        android:icon="?attr/action_about"
+        android:title="@string/action_about"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_alarm"
+        android:title="@string/action_alarm"
+        android:icon="?attr/action_alarm"
+        app:showAsAction="always" />
+    
+	<item
+        android:id="@+id/action_menu"
+		android:title="Menu"
+        android:icon="?attr/action_menu"
+        android:tint="@android:color/white"
+        app:showAsAction="always">	
+		<menu>	        
+			<item
+				android:id="@+id/action_tutorial"
+				android:icon="?attr/action_tutorial"
+				android:title="@string/action_tutorial"
+				app:showAsAction="ifRoom" >
+				<menu>	
+					<item
+						android:id="@+id/action_tutorial_busybox"
+						android:title="@string/action_tutorial_busybox"
+						android:icon="?attr/action_tutorial_busybox"
+						app:showAsAction="ifRoom" />
+					<item
+						android:id="@+id/action_tutorial_debian"
+						android:title="@string/action_tutorial_debian"
+						android:icon="?attr/action_tutorial_debian"
+						app:showAsAction="ifRoom" />
+					<item
+						android:id="@+id/action_tutorial_linux"
+						android:title="@string/action_tutorial_linux"
+						android:icon="?attr/action_tutorial_linux"
+						app:showAsAction="ifRoom" />
+					<item
+						android:id="@+id/action_tutorial_shell"
+						android:title="@string/action_tutorial_shell"
+						android:icon="?attr/action_tutorial_shell"
+						app:showAsAction="ifRoom" />
+					<item
+						android:id="@+id/action_tutorial_busybox"
+						android:title="@string/action_tutorial_busybox"
+						android:icon="?attr/action_tutorial_busybox"
+						app:showAsAction="ifRoom" />
+					<item
+						android:id="@+id/action_tutorial_github"
+						android:title="@string/action_tutorial_github"
+						android:icon="?attr/action_tutorial_github"
+						app:showAsAction="ifRoom" />
+					<item
+						android:id="@+id/action_more"
+						android:title="@string/action_more"
+						android:icon="?attr/action_more"
+						app:showAsAction="ifRoom" />
+				</menu>		
+			</item>
+			<item
+				android:id="@+id/action_folder"
+				android:title="@string/action_folder"
+				android:icon="?attr/action_folder"
+				app:showAsAction="ifRoom">
+				<menu>	
+					<item
+						android:id="@+id/action_folder_archiver"
+						android:title="@string/action_folder_archiver"
+						android:icon="?attr/action_folder_archiver"
+						app:showAsAction="ifRoom" />
+					<item
+						android:id="@+id/action_folder_scanner"
+						android:title="@string/action_folder_scanner"
+						android:icon="?attr/action_folder_scanner"
+						app:showAsAction="ifRoom" />
+					<item
+						android:id="@+id/action_folder_client"
+						android:title="@string/action_folder_client"
+						android:icon="?attr/action_folder_client"
+						app:showAsAction="ifRoom" />
+					<item
+						android:id="@+id/action_folder_manager"
+						android:title="@string/action_folder_manager"
+						android:icon="?attr/action_folder_manager"
+						app:showAsAction="ifRoom" />
+					<item
+						android:id="@+id/action_folder_server"
+						android:title="@string/action_folder_server"
+						android:icon="?attr/action_folder_server"
+						app:showAsAction="ifRoom" />
+				</menu>
+			</item>
+			<item
+				android:id="@+id/action_google"
+				android:title="@string/action_google"
+				android:icon="?attr/action_google"
+				app:showAsAction="ifRoom">
+				<menu>	
+					<item
+						android:id="@+id/action_google_chrome"
+						android:title="@string/action_google_chrome"
+						android:icon="?attr/action_google_chrome"
+						app:showAsAction="ifRoom" />
+					<item
+						android:id="@+id/action_google_blogger"
+						android:title="@string/action_google_blogger"
+						android:icon="?attr/action_google_blogger"
+						app:showAsAction="ifRoom" />
+					<item
+						android:id="@+id/action_google_youtube"
+						android:title="@string/action_google_youtube"
+						android:icon="?attr/action_google_youtube"
+						app:showAsAction="ifRoom" />
+					<item
+						android:id="@+id/action_google_drive"
+						android:title="@string/action_google_drive"
+						android:icon="?attr/action_google_drive"
+						app:showAsAction="ifRoom" />
+					<item
+						android:id="@+id/action_google_maps"
+						android:title="@string/action_google_maps"
+						android:icon="?attr/action_google_maps"
+						app:showAsAction="ifRoom" />
+					<item
+						android:id="@+id/action_google_translate"
+						android:title="@string/action_google_translate"
+						android:icon="?attr/action_google_translate"
+						app:showAsAction="ifRoom" />
+					<item
+						android:id="@+id/action_google_more"
+						android:title="@string/action_more"
+						android:icon="?attr/action_more"
+						app:showAsAction="ifRoom" />
+				</menu>
+				<item
+					android:id="@+id/action_website"
+					android:title="@string/action_website"
+					android:icon="?attr/action_website"
+					app:showAsAction="ifRoom" />
+				<item
+					android:id="@+id/action_wikipedia"
+					android:title="@string/action_wikipedia"
+					android:icon="?attr/action_wiki"
+					app:showAsAction="ifRoom" />
+				<item
+					android:id="@+id/action_github"
+					android:title="@string/action_github"
+					android:icon="?attr/action_github"
+					app:showAsAction="ifRoom" />
+				<item
+					android:id="@+id/action_settings"
+					android:title="@string/action_settings"
+					android:icon="?attr/action_settings"
+					app:showAsAction="ifRoom" />
+				<item
+					android:id="@+id/action_exit"
+					android:title="@string/action_exit"
+					android:icon="?attr/action_exit"
+					app:showAsAction="ifRoom" />
+			</item>
+		</menu>
+	</item>
+</menu>

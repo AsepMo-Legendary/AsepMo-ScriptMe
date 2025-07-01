@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+  
+    <item
+        android:id="@id/im_cancel"
+        app:showAsAction="always"
+        android:title="@android:string/cancel">
+    </item>
+
+    <item
+        android:id="@id/im_previous_item"
+        app:showAsAction="always"
+        android:title="@string/engine_editor_previous">
+    </item>
+    <item
+        android:id="@id/im_next_item"
+        app:showAsAction="always"
+        android:title="@string/engine_editor_next">
+    </item>
+    <item
+        android:id="@id/im_replace"
+        app:showAsAction="always"
+        android:title="@string/engine_editor_replace">
+    </item>
+    
+</menu>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Theme">
+
+        <!-- Dialog styles -->
+        <attr name="textAppearanceDialogTitle" format="reference"/>
+        <attr name="textAppearanceDialogMessage" format="reference"/>
+        <attr name="textAppearanceDialogInfo" format="reference"/>
+    </declare-styleable>
+	<declare-styleable name="FilePickerPreference">
+        <attr name="selection_mode" format="enum">
+            <enum name="single_mode" value="0"/>
+            <enum name="multi_mode" value="1"/>
+        </attr>
+        <attr name="selection_type" format="enum">
+            <enum name="file_select" value="0"/>
+            <enum name="dir_select" value="1"/>
+            <enum name="file_dir_select" value="2"/>
+        </attr>
+
+        <attr
+            name="root_dir"
+            format="string"/>
+
+        <attr
+            name="error_dir"
+            format="string"/>
+
+        <attr
+            name="offset_dir"
+            format="string"/>
+
+        <attr
+            name="extensions"
+            format="string"/>
+
+        <attr
+            name="title_text"
+            format="string"/>
+
+    </declare-styleable>
+	<attr name="fontPath" format="string"/>
+    <attr name="textFieldStyle" format="reference"/>
+
+	<declare-styleable name="ColorPreference">
+        <attr name="itemLayout" format="reference" />
+        <attr name="choices" format="reference" />
+        <attr name="numColumns" format="integer" />
+        <attr name="color_type" format="enum">
+            <enum name="primary" value="0"/>
+            <enum name="accent" value="1"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="LineColorPicker">
+        <attr name="orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="colors" format="reference" />
+        <attr name="selectedColorIndex" format="integer" />
+    </declare-styleable>
+
+	<declare-styleable name="StylePreference">
+        <attr name="itemLayout" format="reference" />
+        <attr name="themes" format="reference" />
+        <attr name="theme_application" format="enum">
+            <enum name="light" value="0"/>
+            <enum name="dark" value="1"/>
+			<enum name="black" value="2"/>
+        </attr>
+    </declare-styleable>
+	<declare-styleable name="FastScrollRecyclerView">
+        <attr name="fastScrollThumbColor" format="reference|color" />
+        <attr name="fastScrollTrackColor" format="reference|color" />
+        <attr name="fastScrollPopupBgColor" format="reference|color" />
+        <attr name="fastScrollPopupTextColor" format="reference|color" />
+        <attr name="fastScrollAutoHide" format="reference|boolean" />
+        <attr name="fastScrollAutoHideDelay" format="reference|integer" />
+    </declare-styleable>
+    <declare-styleable name="stl_SmartTabLayout">
+        <attr name="stl_indicatorAlwaysInCenter" format="boolean"/>
+        <attr name="stl_indicatorWithoutPadding" format="boolean"/>
+        <attr name="stl_indicatorInFront" format="boolean"/>
+        <attr name="stl_indicatorInterpolation" format="enum">
+            <enum name="smart" value="0"/>
+            <enum name="linear" value="1"/>
+        </attr>
+        <attr name="stl_indicatorGravity" format="enum">
+            <enum name="bottom" value="0"/>
+            <enum name="top" value="1"/>
+            <enum name="center" value="2"/>
+        </attr>
+        <attr name="stl_indicatorColor" format="color"/>
+        <attr name="stl_indicatorColors" format="reference"/>
+        <attr name="stl_indicatorThickness" format="dimension"/>
+        <attr name="stl_indicatorWidth" format="dimension">
+            <enum name="auto" value="-1"/>
+        </attr>
+        <attr name="stl_indicatorCornerRadius" format="dimension"/>
+        <attr name="stl_overlineColor" format="color"/>
+        <attr name="stl_overlineThickness" format="dimension"/>
+        <attr name="stl_underlineColor" format="color"/>
+        <attr name="stl_underlineThickness" format="dimension"/>
+        <attr name="stl_dividerColor" format="color"/>
+        <attr name="stl_dividerColors" format="reference"/>
+        <attr name="stl_dividerThickness" format="dimension"/>
+        <attr name="stl_defaultTabBackground" format="reference"/>
+        <attr name="stl_defaultTabTextAllCaps" format="boolean"/>
+        <attr name="stl_defaultTabTextColor" format="color|reference"/>
+        <attr name="stl_defaultTabTextSize" format="dimension"/>
+        <attr name="stl_defaultTabTextHorizontalPadding" format="dimension"/>
+        <attr name="stl_defaultTabTextMinWidth" format="dimension"/>
+        <attr name="stl_customTabTextLayoutId" format="reference"/>
+        <attr name="stl_customTabTextViewId" format="reference"/>
+        <attr name="stl_distributeEvenly" format="boolean"/>
+        <attr name="stl_clickable" format="boolean"/>
+        <attr name="stl_titleOffset" format="dimension">
+            <enum name="auto_center" value="-1"/>
+        </attr>
+        <attr name="stl_drawDecorationAfterTab" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="SlidingUpPanelLayout">
+        <attr name="umanoPanelHeight" format="dimension" />
+        <attr name="umanoShadowHeight" format="dimension" />
+        <attr name="umanoParallaxOffset" format="dimension" />
+        <attr name="umanoFadeColor" format="color" />
+        <attr name="umanoFlingVelocity" format="integer" />
+        <attr name="umanoDragView" format="reference" />
+        <attr name="umanoScrollableView" format="reference" />
+        <attr name="umanoOverlay" format="boolean"/>
+        <attr name="umanoClipPanel" format="boolean"/>
+        <attr name="umanoAnchorPoint" format="float" />
+        <attr name="umanoInitialState" format="enum">
+            <enum name="expanded" value="0" />
+            <enum name="collapsed" value="1" />
+            <enum name="anchored" value="2" />
+            <enum name="hidden" value="3" />
+        </attr>
+        <attr name="umanoScrollInterpolator" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <!-- {@deprecated Use civ_circlebackground_color instead.} -->
+        <attr name="civ_fill_color" format="color" />
+        <attr name="civ_circle_background_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="RoundedImageView">
+        <attr name="riv_corner_radius" format="dimension" />
+        <attr name="riv_corner_radius_top_left" format="dimension" />
+        <attr name="riv_corner_radius_top_right" format="dimension" />
+        <attr name="riv_corner_radius_bottom_left" format="dimension" />
+        <attr name="riv_corner_radius_bottom_right" format="dimension" />
+        <attr name="riv_border_width" format="dimension" />
+        <attr name="riv_border_color" format="color" />
+        <attr name="riv_mutate_background" format="boolean" />
+        <attr name="riv_oval" format="boolean" />
+        <attr name="android:scaleType" />
+        <attr name="riv_tile_mode">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+        <attr name="riv_tile_mode_x">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+        <attr name="riv_tile_mode_y">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+	</declare-styleable>
+    <declare-styleable name="ChangeLogListView">
+
+        <!-- Layout resource id for changelog item rows. -->
+        <attr name="rowLayoutId" format="reference" />
+
+        <!-- Layout resource id for changelog item header rows. -->
+        <attr name="rowHeaderLayoutId" format="reference" />
+
+        <!-- Resource id for changelog.xml file. -->
+        <attr name="changeLogFileResourceId" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="FloatingActionButton">
+        <attr name="drawable" format="integer"/>
+        <attr name="colour" format="color"/>
+        <attr name="shadowRadius" format="float"/>
+        <attr name="shadowDx" format="float"/>
+        <attr name="shadowDy" format="float"/>
+        <attr name="shadowColor" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="MaterialSpinner">
+        <attr name="ms_baseColor" format="color"/>
+        <attr name="ms_highlightColor" format="color"/>
+        <attr name="ms_errorColor" format="color"/>
+        <attr name="ms_error" format="string"/>
+        <attr name="ms_hint" format="string"/>
+        <attr name="ms_hintColor" format="color"/>
+        <attr name="ms_hintTextSize" format="dimension"/>
+        <attr name="ms_floatingLabelText" format="string"/>
+        <attr name="ms_floatingLabelColor" format="color"/>
+        <attr name="ms_multiline" format="boolean"/>
+        <attr name="ms_nbErrorLines" format="integer"/>
+        <attr name="ms_typeface" format="string"/>
+        <attr name="ms_alignLabels" format="boolean"/>
+        <attr name="ms_thickness" format="dimension"/>
+        <attr name="ms_thickness_error" format="dimension"/>
+        <attr name="ms_arrowSize" format="dimension"/>
+        <attr name="ms_arrowColor" format="color"/>
+        <attr name="ms_enableFloatingLabel" format="boolean"/>
+        <attr name="ms_enableErrorLabel" format="boolean"/>
+        <attr name="ms_alwaysShowFloatingLabel" format="boolean"/>
+        <attr name="ms_isRtl" format="boolean"/>
+        <attr name="ms_hintView" format="reference"/>
+        <attr name="ms_dropDownHintView" format="reference"/>
+
+    </declare-styleable>
+</resources>

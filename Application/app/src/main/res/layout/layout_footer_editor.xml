@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/footer_drawer"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:id="@+id/footer"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+		<View
+			android:background="#ff2a2a2a"
+			android:layout_width="fill_parent"
+			android:layout_height="1.0dip"/>
+
+		<RelativeLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="48.0dip">
+
+			<View
+				android:id="@+id/line_left"
+				android:background="#ff2a2a2a"
+				android:layout_width="1.0dip"
+				android:layout_height="fill_parent"/>
+
+			<LinearLayout
+				android:id="@+id/menu_drawer_1"
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:clickable="true"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_toRightOf="@id/line_left">
+
+				<ImageView
+					android:paddingLeft="16.0dip"
+					android:layout_width="35.0dip"
+					android:layout_height="35.0dip"
+					android:src="@drawable/ic_action_open_file"
+					android:tint="@android:color/white"
+					android:paddingStart="16.0dip"
+					android:id="@+id/icon_open_file"/>
+
+				<TextView
+					android:textSize="12.0sp"
+					android:textColor="@android:color/white"
+					android:gravity="center_vertical"
+					android:paddingLeft="20.0dip"
+					android:paddingRight="20.0dip"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:text="@string/engine_editor_open_file"
+					android:textAllCaps="true"
+					android:paddingStart="20.0dip"
+					android:paddingEnd="20.0dip"
+					android:id="@+id/text_open_file"/>
+
+			</LinearLayout>
+
+			<View
+				android:id="@+id/line_profile"
+				android:background="#ff2a2a2a"
+				android:layout_width="1.0dip"
+				android:layout_height="fill_parent"
+				android:layout_toLeftOf="@+id/action_new_file"/>
+
+			<ImageView
+				android:id="@+id/action_new_file"
+				android:padding="12.0dip"
+				android:clickable="true"
+				android:layout_width="64.0dip"
+				android:layout_height="fill_parent"
+				android:src="@drawable/ic_action_add_white"
+				android:tint="@android:color/white"
+				android:layout_alignParentRight="true"/>
+
+			<View
+				android:id="@+id/line_right"
+				android:background="#ff2a2a2a"
+				android:layout_width="1.0dip"
+				android:layout_height="fill_parent"
+				android:layout_alignParentRight="true"/>
+
+		</RelativeLayout>
+
+		<View
+			android:background="#ff2a2a2a"
+			android:layout_width="fill_parent"
+			android:layout_height="1.0dip"/>
+
+		<RelativeLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="48.0dip">
+
+			<View
+				android:id="@+id/line_left_1"
+				android:background="#ff2a2a2a"
+				android:layout_width="1.0dip"
+				android:layout_height="fill_parent"/>
+
+			<LinearLayout
+				android:id="@+id/menu_drawer_2"
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:clickable="true"
+				android:layout_width="fill_parent"
+				android:layout_height="48.0dip"
+				android:layout_toRightOf="@id/line_left_1">
+
+				<ImageView
+					android:id="@+id/icon_settings"
+					android:paddingLeft="16.0dip"
+					android:layout_width="35.0dip"
+					android:layout_height="35.0dip"
+					android:src="@drawable/ic_action_settings_white"
+					android:tint="@android:color/white"
+					android:paddingStart="16.0dip"/>
+
+				<TextView
+					android:id="@+id/text_settings"
+					android:textSize="12.0sp"
+					android:textColor="@android:color/white"
+					android:gravity="center_vertical"
+					android:paddingLeft="20.0dip"
+					android:paddingRight="20.0dip"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:text="@string/engine_editor_settings"
+					android:textAllCaps="true"
+					android:paddingStart="20.0dip"
+					android:paddingEnd="20.0dip"/>
+
+			</LinearLayout>
+
+			<View
+				android:id="@+id/line_right_2"
+				android:background="#ff2a2a2a"
+				android:layout_width="1.0dip"
+				android:layout_height="fill_parent"
+				android:layout_alignParentRight="true"/>
+
+		</RelativeLayout>
+
+		<View
+			android:background="#ff2a2a2a"
+			android:layout_width="fill_parent"
+			android:layout_height="1.0dip"/>
+
+		<RelativeLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="48.0dip">
+
+			<View
+				android:id="@+id/line_left_2"
+				android:background="#ff2a2a2a"
+				android:layout_width="1.0dip"
+				android:layout_height="fill_parent"/>
+
+			<LinearLayout
+				android:id="@+id/menu_drawer_3"
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:clickable="true"
+				android:layout_width="fill_parent"
+				android:layout_height="48.0dip"
+				android:layout_toRightOf="@id/line_left_2">
+
+				<ImageView
+					android:id="@+id/icon_exit"
+					android:paddingLeft="16.0dip"
+					android:layout_width="35.0dip"
+					android:layout_height="35.0dip"
+					android:src="@drawable/ic_action_exit"
+					android:tint="@android:color/white"
+					android:paddingStart="16.0dip"/>
+
+				<TextView
+					android:id="@+id/text_exit"
+					android:textSize="12.0sp"
+					android:textColor="@android:color/white"
+					android:gravity="center_vertical"
+					android:paddingLeft="20.0dip"
+					android:paddingRight="20.0dip"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:text="@string/engine_editor_exit"
+					android:textAllCaps="true"
+					android:paddingStart="20.0dip"
+					android:paddingEnd="20.0dip"/>
+
+			</LinearLayout>
+
+			<View
+				android:id="@+id/line_right_2"
+				android:background="#ff2a2a2a"
+				android:layout_width="1.0dip"
+				android:layout_height="fill_parent"
+				android:layout_alignParentRight="true"/>
+
+		</RelativeLayout>
+
+	</LinearLayout>
+
+	<View
+		android:background="#ff000000"
+		android:layout_width="fill_parent"
+		android:layout_height="1.0dip"
+		android:layout_below="@id/footer"/>
+
+</RelativeLayout>
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory 
+		android:title="@string/engine_settings_header">      
+		
+		<com.scriptme.story.engine.app.settings.theme.StylePreference
+            android:defaultValue="0"
+            android:dialogTitle="@string/engine_settings_theme"
+            android:key="theme"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:summary="@string/engine_settings_theme_summary"
+            android:title="@string/engine_settings_theme"
+			app:itemLayout="@layout/layout_styles_preference"
+            app:theme_application="light"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

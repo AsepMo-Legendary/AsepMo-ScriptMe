@@ -1,0 +1,256 @@
+<?xml version='1.0' encoding='utf-8'?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.scriptme.story"
+    android:installLocation="internalOnly">
+    
+    <!-- dapatkan akses jaringan penuh -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!-- lihat sambungan jaringan -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <!-- lihat sambungan WLAN -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <!-- ubah konektivitas jaringan -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+
+    <!-- sambung dan putuskan WLAN -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+
+    <!-- Izinkan penerimaan WLAN Multicast -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+
+    <!-- baca konten kartu SD Anda -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <!-- mengubah atau menghapus konten kartu SD Anda -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <!-- REQUEST_IGNORE_BATTERY_OPTIMIZATIONS -->
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+
+    <!-- minta pasang paket -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+
+    <!-- REQUEST_DELETE_PACKAGES -->
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES"/>
+
+       <!-- mencegah ponsel menjadi tidak aktif -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <!-- kontrol getaran -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false"/>
+
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="false"/>
+
+    <application
+        android:name=".AppController"
+        android:extractNativeLibs="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/engine_app_name"
+		android:banner="@drawable/engine_banner"
+        android:theme="@style/ScriptMe.Theme.Light"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
+		android:supportsRtl="false"
+        android:resizeableActivity="false">
+
+        <activity
+            android:name=".StoryActivity"
+            android:label="@string/engine_app_name"
+            android:theme="@style/ScriptMe.Theme.Splash">
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name="com.scriptme.story.application.ApplicationActivity"
+            android:label="@string/engine_app_name"
+            android:theme="@style/ScriptMe.Theme.Light">
+            
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+            </intent-filter>
+
+        </activity>
+		
+        <activity
+            android:name="com.scriptme.story.application.ApplicationPreference"
+            android:label="@string/engine_settings"
+            android:theme="@style/Settings.Theme.Light"
+            android:parentActivityName="com.scriptme.story.application.ApplicationActivity"  
+            android:configChanges="orientation|screenSize">
+            
+            <intent-filter>
+
+                <action android:name="android.intent.action.SETTING"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+            </intent-filter>
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.APPLICATION_PREFERENCES"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+            </intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.scriptme.story.application.ApplicationActivity" />
+            
+        </activity>
+
+        <activity
+            android:name="com.scriptme.story.application.ApplicationAbout"
+            android:label="@string/engine_app_about"
+            android:theme="@style/ScriptMe.Theme.Light"
+            android:parentActivityName="com.scriptme.story.application.ApplicationActivity"      
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.scriptme.story.application.ApplicationActivity" />
+        </activity>
+        
+        <activity
+            android:name="com.scriptme.story.application.ApplicationScriptFile"
+            android:label="@string/engine_app_script_file"
+            android:theme="@style/ScriptMe.Theme.Light"
+            android:parentActivityName="com.scriptme.story.application.ApplicationActivity"
+            android:windowSoftInputMode="adjustResize">
+        
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.scriptme.story.application.ApplicationActivity" />
+        </activity>
+        <activity
+            android:name="com.scriptme.story.application.ApplicationEbook"
+            android:label="@string/engine_app_ebook"
+            android:theme="@style/ScriptMe.Theme.Light"
+            android:parentActivityName="com.scriptme.story.application.ApplicationActivity"      
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.scriptme.story.application.ApplicationActivity" />
+        </activity>
+        <activity
+            android:name="com.scriptme.story.application.ApplicationEditor"
+            android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateUnspecified|adjustResize"
+            android:label="@string/engine_app_editor"
+            android:theme="@style/ScriptMe.Theme.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.MULTIWINDOW_LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+                <action android:name="android.intent.action.PICK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="file" />
+                <data android:mimeType="text/*" />
+                <data android:pathPattern="*.txt" />
+                <data android:pathPattern="*.html" />
+                <data android:pathPattern="*.css" />
+                <data android:pathPattern="*.js" />
+                <data android:pathPattern="*.md"/>
+                <data android:pathPattern="*.php" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+       <activity
+            android:name="com.scriptme.story.application.ApplicationTerminal"
+            android:label="@string/engine_app_terminal"
+            android:theme="@style/ScriptMe.Theme.Light"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <activity
+            android:name="com.scriptme.story.engine.app.folders.explorer.FileExplorerActivity"
+            android:label="@string/engine_app_file_explore"
+            android:theme="@style/ScriptMe.Theme.Light"
+            android:screenOrientation="portrait"/>
+		 <activity
+            android:name=".application.ApplicationReminder"
+            android:label="@string/engine_app_reminder"
+            android:theme="@style/ScriptMe.Theme.Light"
+             android:parentActivityName="com.scriptme.story.application.ApplicationActivity">
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+            </intent-filter>
+
+             <meta-data
+                 android:name="android.support.PARENT_ACTIVITY"
+                 android:value="com.scriptme.story.application.ApplicationActivity" />
+       </activity>
+       <activity 
+            android:name="com.scriptme.story.application.ApplicationAddReminder"    
+            android:label="@string/engine_app_reminder"
+            android:theme="@style/ScriptMe.Theme.Light"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".application.ApplicationReminder">
+           <meta-data
+               android:name="android.support.PARENT_ACTIVITY"
+               android:value="com.scriptme.story.application.ApplicationReminder" />
+       </activity>
+        <activity 
+            android:name="com.scriptme.story.application.ApplicationReminderResult"
+            android:label="@string/engine_app_reminder"
+            android:theme="@style/ScriptMe.Theme.Light"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".CrashActivity"
+            android:screenOrientation="portrait"/>
+
+        <service android:name="com.scriptme.story.service.TodoNotificationService"/>
+        <service android:name="com.scriptme.story.service.DeleteNotificationService"/>
+        
+        <meta-data
+            android:name="com.sec.android.support.multiwindow"
+            android:value="true"/>
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="4.0"/>
+
+    </application>
+
+</manifest>

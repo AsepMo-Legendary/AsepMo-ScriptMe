@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_goto_home"
+        android:icon="?attr/action_home"
+        android:title="@string/engine_explore_home"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/add_folder_menu"
+        android:icon="?attr/action_add"
+        android:title="@string/engine_explore_create_folder"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/paste_menu"
+        android:title="@string/engine_explore_paste"
+        android:visible="false"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="?attr/action_search"
+        android:title="@string/engine_explore_filter_by_name"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/show_hidden_files_menu"
+        android:checkable="true"
+        android:checked="false"
+        android:title="@string/engine_explore_show_hidden_files"
+        app:showAsAction="never" />
+
+    <group
+        android:id="@+id/sort_group_menu"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/sort_by_name_menu"
+            android:checked="true"
+            android:title="@string/engine_explore_sort_by_name"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/sort_by_datetime_menu"
+            android:checked="false"
+            android:title="@string/engine_explore_sort_by_datetime"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/sort_by_size_menu"
+            android:checked="false"
+            android:title="@string/engine_explore_sort_by_size"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/sort_by_type_menu"
+            android:checked="false"
+            android:title="@string/engine_explore_sort_by_type"
+            app:showAsAction="never" />
+    </group>
+</menu>

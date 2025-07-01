@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- Application theme splash. -->
+    <style name="ScriptMe.Theme.Splash" parent="@style/ScriptMe.Theme.Black">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@drawable/engine_scriptme_splash_background</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+	<!-- Application theme light. -->
+	<style name="ScriptMe.Theme.Light" parent="Analytics.Theme.Light">
+		<!-- All customizations that are NOT specific to a particular API-level can go here. -->
+	</style>
+	<style name="Settings.Theme.Light" parent="Analytics.Theme.Light">
+		<!-- All customizations that are NOT specific to a particular API-level can go here. -->
+
+		<item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>	
+	</style>
+	<!-- Application theme dark. -->
+	<style name="ScriptMe.Theme.Dark" parent="Analytics.Theme.Dark">
+		<!-- All customizations that are NOT specific to a particular API-level can go here. -->
+	</style>
+	<style name="Settings.Theme.Dark" parent="Analytics.Theme.Dark">
+		<!-- All customizations that are NOT specific to a particular API-level can go here. -->
+
+		<item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>	
+	</style>
+	<!-- Application theme black. -->
+	<style name="ScriptMe.Theme.Black" parent="Analytics.Theme.Black">
+		<!-- All customizations that are NOT specific to a particular API-level can go here. -->
+	</style>
+
+	<!-- Settings theme. -->
+	<style name="Settings.Theme.Black" parent="Analytics.Theme.Black">
+		<!-- All customizations that are NOT specific to a particular API-level can go here. -->
+
+		<item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
+	</style>
+</resources>

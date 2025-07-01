@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="Analytics.Theme.Activity"> 
+		<item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+		<item name="android:statusBarColor">@color/engine_color_analytics_status_bar</item>
+
+        <item name="android:windowDisablePreview">true</item>
+		<item name="android:windowBackground">@color/engine_color_analytics_background</item>
+
+    </style>
+
+	<style name="Analytics.Theme.Activity.Translucent">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="Analytics.Theme.Permission.Activity.Transparent">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="Analytics.Theme.Permission.Dialog" parent="android:Theme.Material.Dialog.NoActionBar" />
+
+    <style name="Analytics.Theme.Permission.Widget.Progress" parent="@android:style/Widget.Material.ProgressBar" />
+
+    <style name="Analytics.Theme.Permission.Widget.Progress.Wait">
+        <item name="android:indeterminateOnly">true</item>
+        <item name="android:indeterminateTint">@android:color/white</item>
+    </style>
+	
+    <style name="ScriptMe.Theme.Light" parent="Analytics.Theme.Light">
+
+		<item name="android:windowContentTransitions">true</item>
+
+		<item name="android:windowAllowEnterTransitionOverlap">true</item>
+		<item name="android:windowAllowReturnTransitionOverlap">true</item>
+
+		<item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
+		<item name="android:windowSharedElementExitTransition">@android:transition/move</item>
+ 
+		<item name="android:windowDrawsSystemBarBackgrounds">true</item>
+		<item name="android:statusBarColor">@color/engine_light_color_statusBar</item>
+		
+		<item name="android:alertDialogTheme">@style/Analytics.Theme.AlertDialog.Light</item>
+
+	</style>
+	
+	<style name="ScriptMe.Theme.Dark" parent="Analytics.Theme.Dark">
+
+		<item name="android:windowContentTransitions">true</item>
+
+		<item name="android:windowAllowEnterTransitionOverlap">true</item>
+		<item name="android:windowAllowReturnTransitionOverlap">true</item>
+
+		<item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
+		<item name="android:windowSharedElementExitTransition">@android:transition/move</item>
+ 
+		<item name="android:windowDrawsSystemBarBackgrounds">true</item>
+		<item name="android:statusBarColor">@color/engine_dark_color_statusBar</item>
+		
+		<item name="android:alertDialogTheme">@style/Analytics.Theme.AlertDialog.Light</item>
+
+	</style>
+	
+	<style name="ScriptMe.Theme.Black" parent="Analytics.Theme.Black">
+
+		<item name="android:windowContentTransitions">true</item>
+
+		<item name="android:windowAllowEnterTransitionOverlap">true</item>
+		<item name="android:windowAllowReturnTransitionOverlap">true</item>
+
+		<item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
+		<item name="android:windowSharedElementExitTransition">@android:transition/move</item>
+
+		<item name="android:windowDrawsSystemBarBackgrounds">true</item>
+		<item name="android:statusBarColor">@color/engine_black_color_statusBar</item>
+
+		<item name="android:alertDialogTheme">@style/Analytics.Theme.AlertDialog.Light</item>
+
+	</style>
+</resources>

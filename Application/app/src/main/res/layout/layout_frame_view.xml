@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:background="@color/engine_color_black"
+	android:id="@+id/frame_view_container">
+
+	<LinearLayout
+		android:id="@+id/frame_view_layout"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_centerInParent="true"
+		android:orientation="vertical"
+		android:visibility="visible">
+
+		<FrameLayout
+			android:id="@+id/cover_view"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:clipChildren="false">
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:clipChildren="false"
+				android:padding="24dp">
+
+				<ImageView
+					android:id="@+id/cover"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:gravity="top"
+					android:src="@drawable/engine_scriptme_cover"
+					android:scaleType="fitXY"/>
+
+			</RelativeLayout>
+
+		</FrameLayout>
+
+		<RelativeLayout
+			android:id="@+id/message_panel"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1">
+
+			<FrameLayout
+				android:id="@+id/frame_view_message"
+				android:orientation="vertical"
+				android:layout_width="fill_parent"
+				android:layout_height="120dp"
+				android:padding="10dp"
+				android:layout_gravity="bottom"
+				android:layout_alignParentBottom="true"
+				android:layout_marginBottom="49dp">
+
+				<ImageView
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:scaleType="fitXY"
+					android:src="@drawable/engine_scriptme_frame"
+					android:id="@+id/iframe_view"/>
+
+				<TextView
+					android:id="@+id/text_message"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="This Is a ScriptMe Application.\n For Edit And Run Script."
+					android:textSize="17sp"
+					android:textColor="#9a9a9a"
+					android:gravity="center"
+					android:layout_gravity="center"
+					android:padding="5dp"/>
+
+			</FrameLayout>
+
+		</RelativeLayout>
+
+	</LinearLayout>
+
+	<FrameLayout
+		android:id="@+id/content_frame"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:visibility="gone"/>
+
+</RelativeLayout>
+

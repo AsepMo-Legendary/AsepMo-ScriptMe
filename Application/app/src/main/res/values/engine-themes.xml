@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Analytics" />
+
+    <style name="Analytics.Theme" parent="Theme.AppCompat">
+		<item name="android:textViewStyle">@style/Analytics.Theme.Widget.TextView</item>        
+        <item name="android:actionBarStyle">@style/Analytics.Theme.ActionBar</item>
+        <!-- Custom Style Attribute-->
+        <item name="textFieldStyle">@style/Analytics.Theme.Widget.TextField</item>
+	</style>
+	<style name="Analytics.Theme.Light" parent="Theme.AppCompat.Light.DarkActionBar">
+		<item name="colorPrimaryDark">@color/engine_light_color_secondary</item>
+		<item name="colorPrimary">@color/engine_light_color_primary</item>
+		<item name="colorAccent">@color/engine_light_color_accent</item>
+		<item name="colorControlNormal">@color/engine_light_color_control_normal</item>
+		<item name="colorControlActivated">@color/engine_light_color_control_activated</item>
+		<item name="colorControlHighlight">@color/engine_light_color_control_highlight</item>
+
+		<item name="actionBarWidgetTheme">@null</item>
+        <item name="actionBarTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="actionBarPopupTheme">@style/ThemeOverlay.AppCompat.Dark</item>
+
+        <item name="actionBarItemBackground">@drawable/engine_selectable_background</item>
+        <item name="android:actionBarItemBackground">@drawable/engine_selectable_background</item>
+
+		<item name="android:textColorPrimary">@color/engine_light_color_textPrimary</item>
+		<item name="android:textColorSecondary">@color/engine_light_color_textSecondary</item>
+
+		<item name="android:textViewStyle">@style/Analytics.Theme.Widget.TextView</item>        
+        <item name="android:actionBarStyle">@style/Analytics.Theme.ActionBar</item>
+        <!-- Custom Style Attribute-->
+        <item name="textFieldStyle">@style/Analytics.Theme.Widget.TextField</item>
+		<!-- drawables -->
+        <item name="action_about">@drawable/ic_action_about_black</item>
+		<item name="action_info">@drawable/ic_action_info_black</item>
+        <item name="action_paste">@drawable/ic_action_paste_black</item>
+        <item name="action_remove">@drawable/ic_action_remove_black</item>
+        <item name="action_search">@drawable/ic_action_search_black</item>
+		<item name="action_home">@drawable/ic_action_home_black</item>
+        <item name="action_copy">@drawable/ic_action_copy_black</item>
+        <item name="action_cut">@drawable/ic_action_cut_black</item>
+        <item name="action_edit">@drawable/ic_action_edit_black</item>
+        <item name="action_undo">@drawable/ic_action_undo_black</item>
+        <item name="action_redo">@drawable/ic_action_redo_black</item>
+        <item name="action_select">@drawable/ic_action_check_black</item>
+		<item name="action_select_all">@drawable/ic_action_check_black</item>
+        <item name="action_archive">@drawable/ic_action_archive_black</item>
+        <item name="action_bookmark">@drawable/ic_action_bookmark_black</item>
+        <item name="action_delete">@drawable/ic_action_delete_black</item>
+        <item name="action_share">@drawable/ic_action_share_black</item>
+		<item name="action_menu">@drawable/ic_action_menu_black</item>
+		<item name="action_more">@drawable/ic_action_more_black</item>
+		<item name="action_refresh">@drawable/ic_action_more_black</item>
+		<item name="action_save">@drawable/ic_action_save_black</item>
+        <item name="action_theme">@drawable/ic_action_more_black</item>
+		<item name="action_folder">@drawable/ic_folder_black</item>
+        <item name="action_folder_scanner">@drawable/ic_folder_search_black</item>
+        <item name="action_folder_manager">@drawable/ic_folder_manager_black</item>
+		<item name="action_folder_server">@drawable/ic_folder_network_black</item>
+		<item name="action_folder_archiver">@drawable/ic_folder_archiver_black</item>
+		<item name="action_folder_client">@drawable/ic_folder_sync_black</item>
+		<item name="action_package">@drawable/ic_package_black</item>
+		<item name="action_website">@drawable/ic_action_web_black</item>
+		<item name="action_wiki">@drawable/ic_action_wikipedia_black</item>
+		<item name="action_github">@drawable/ic_action_github_black</item>
+		<item name="action_settings">@drawable/ic_action_settings_black</item>
+		<item name="action_exit">@drawable/ic_action_exit_black</item>
+		<item name="action_tutorial">@drawable/ic_action_tutorial_black</item>
+		<item name="action_tutorial_busybox">@drawable/ic_busybox_black</item>
+		<item name="action_tutorial_debian">@drawable/ic_debian_black</item>
+		<item name="action_tutorial_linux">@drawable/ic_linux_black</item>
+		<item name="action_tutorial_shell">@drawable/ic_bash_black</item>
+		<item name="action_tutorial_github">@drawable/ic_git_black</item>
+		<item name="action_google">@drawable/ic_google_black</item>
+		<item name="action_google_maps">@drawable/ic_google_maps_black</item>
+		<item name="action_google_translate">@drawable/ic_google_translate_black</item>
+		<item name="action_google_drive">@drawable/ic_google_drive_black</item>
+		<item name="action_google_chrome">@drawable/ic_google_chrome_black</item>
+		<item name="action_google_drive">@drawable/ic_google_drive_black</item>
+		<item name="action_google_blogger">@drawable/ic_google_blogger_black</item>
+		<item name="action_google_youtube">@drawable/ic_google_youtube_black</item>
+		
+		<item name="action_menu_right">@drawable/ic_chevron_right_black</item>
+		<item name="action_menu_left">@drawable/ic_chevron_left_black</item>
+		<item name="action_add">@drawable/ic_action_add_black</item>
+		<item name="action_send">@drawable/ic_action_send_black</item>
+		<item name="action_alarm">@drawable/ic_action_alarm_black</item>
+		
+        <item name="actionModeBackground">@color/engine_color_blue_A400</item>
+        <item name="windowActionModeOverlay">true</item>
+
+		<item name="windowNoTitle">true</item>
+		<item name="windowActionBar">false</item>
+		<!-- Avoid action mode toolbar pushing down terminal content when
+		selecting text on pre-6.0 (non-floating toolbar). -->
+        <item name="android:windowActionModeOverlay">true</item>
+		<item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>	
+		<item name="alertDialogTheme">@style/Analytics.Theme.AlertDialog.Light</item>
+        <!-- Dialog -->
+        <item name="textAppearanceDialogTitle">@style/TextAppearance.Dialog.Title</item>
+        <item name="textAppearanceDialogMessage">@style/TextAppearance.Dialog.Message</item>
+        <item name="textAppearanceDialogInfo">@style/TextAppearance.Dialog.Info</item>
+
+        
+        <item name="drawerArrowStyle">@style/Analytics.Theme.DrawerArrow.Light</item>
+		<item name="android:windowBackground">@color/engine_light_color_background_window</item>
+	</style>
+
+	
+	<style name="Analytics.Theme.Dark" parent="Theme.AppCompat">
+		<item name="colorPrimaryDark">@color/engine_dark_color_secondary</item>
+		<item name="colorPrimary">@color/engine_dark_color_primary</item>
+		<item name="colorAccent">@color/engine_dark_color_accent</item>
+		<item name="colorControlNormal">@color/engine_dark_color_control_normal</item>
+		<item name="colorControlActivated">@color/engine_dark_color_control_activated</item>
+		<item name="colorControlHighlight">@color/engine_dark_color_control_highlight</item>
+
+		<item name="actionBarWidgetTheme">@null</item>
+        <item name="actionBarTheme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="actionBarPopupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+
+        <item name="actionBarItemBackground">@drawable/engine_selectable_background</item>
+        <item name="android:actionBarItemBackground">@drawable/engine_selectable_background</item>
+
+		<item name="android:textColorPrimary">@color/engine_dark_color_textPrimary</item>
+		<item name="android:textColorSecondary">@color/engine_dark_color_textSecondary</item>
+
+		<item name="android:textViewStyle">@style/Analytics.Theme.Widget.TextView</item>        
+        <item name="android:actionBarStyle">@style/Analytics.Theme.ActionBar</item>
+        <!-- Custom Style Attribute-->
+        <item name="textFieldStyle">@style/Analytics.Theme.Widget.TextField</item>
+
+		<!-- drawables -->
+        <item name="action_about">@drawable/ic_action_about_white</item>
+		<item name="action_info">@drawable/ic_action_info_white</item>
+        <item name="action_paste">@drawable/ic_action_paste_white</item>
+        <item name="action_remove">@drawable/ic_action_remove_white</item>
+        <item name="action_search">@drawable/ic_action_search_white</item>
+		<item name="action_home">@drawable/ic_action_home_white</item>
+        <item name="action_copy">@drawable/ic_action_copy_white</item>
+        <item name="action_cut">@drawable/ic_action_cut_white</item>
+        <item name="action_edit">@drawable/ic_action_edit_white</item>
+        <item name="action_undo">@drawable/ic_action_undo_white</item>
+        <item name="action_redo">@drawable/ic_action_redo_white</item>
+        <item name="action_select">@drawable/ic_action_check_white</item>
+		<item name="action_select_all">@drawable/ic_action_check_white</item>
+        <item name="action_archive">@drawable/ic_action_archive_white</item>
+        <item name="action_bookmark">@drawable/ic_action_bookmark_white</item>
+        <item name="action_delete">@drawable/ic_action_delete_white</item>
+        <item name="action_share">@drawable/ic_action_share_white</item>
+		<item name="action_menu">@drawable/ic_action_menu_white</item>
+		<item name="action_more">@drawable/ic_action_more_white</item>
+		<item name="action_refresh">@drawable/ic_action_more_white</item>
+		<item name="action_save">@drawable/ic_action_save_white</item>
+        <item name="action_theme">@drawable/ic_action_more_white</item>
+		<item name="action_folder">@drawable/ic_folder_white</item>
+        <item name="action_folder_scanner">@drawable/ic_folder_search_white</item>
+        <item name="action_folder_manager">@drawable/ic_folder_manager_white</item>
+		<item name="action_folder_server">@drawable/ic_folder_network_white</item>
+		<item name="action_folder_archiver">@drawable/ic_folder_archiver_white</item>
+		<item name="action_folder_client">@drawable/ic_folder_sync_white</item>
+		<item name="action_package">@drawable/ic_package_white</item>
+		<item name="action_website">@drawable/ic_action_web_white</item>
+		<item name="action_wiki">@drawable/ic_action_wikipedia_white</item>
+		<item name="action_github">@drawable/ic_action_github_white</item>
+		<item name="action_settings">@drawable/ic_action_settings_white</item>
+		<item name="action_exit">@drawable/ic_action_exit_white</item>
+		
+		<item name="action_tutorial">@drawable/ic_action_tutorial_white</item>
+		<item name="action_tutorial_busybox">@drawable/ic_busybox_white</item>
+		<item name="action_tutorial_debian">@drawable/ic_debian_white</item>
+		<item name="action_tutorial_linux">@drawable/ic_linux_white</item>
+		<item name="action_tutorial_shell">@drawable/ic_bash_white</item>
+		<item name="action_tutorial_github">@drawable/ic_git_white</item>
+		
+		<item name="action_google">@drawable/ic_google_white</item>
+		<item name="action_google_maps">@drawable/ic_google_maps_white</item>
+		<item name="action_google_translate">@drawable/ic_google_translate_white</item>
+		<item name="action_google_drive">@drawable/ic_google_drive_white</item>
+		<item name="action_google_chrome">@drawable/ic_google_chrome_white</item>
+		<item name="action_google_drive">@drawable/ic_google_drive_white</item>
+		<item name="action_google_blogger">@drawable/ic_google_blogger_white</item>
+		<item name="action_google_youtube">@drawable/ic_google_youtube_white</item>
+		
+		<item name="action_menu_right">@drawable/ic_chevron_right_white</item>
+		<item name="action_menu_left">@drawable/ic_chevron_left_white</item>
+		<item name="action_add">@drawable/ic_action_add_white</item>
+		<item name="action_send">@drawable/ic_action_send_white</item>
+		<item name="action_alarm">@drawable/ic_action_alarm_white</item>
+		
+        <item name="actionModeBackground">@color/engine_color_blue_A400</item>
+        <item name="windowActionModeOverlay">true</item>
+
+		<item name="windowNoTitle">true</item>
+		<item name="windowActionBar">false</item>  <!-- For 2.x version  -->
+		<!-- Avoid action mode toolbar pushing down terminal content when
+		selecting text on pre-6.0 (non-floating toolbar). -->
+        <item name="android:windowActionModeOverlay">true</item>
+		<item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>	
+		<item name="alertDialogTheme">@style/Analytics.Theme.AlertDialog.Dark</item>
+        <!-- Dialog -->
+        <item name="textAppearanceDialogTitle">@style/TextAppearance.Dialog.Title</item>
+        <item name="textAppearanceDialogMessage">@style/TextAppearance.Dialog.Message</item>
+        <item name="textAppearanceDialogInfo">@style/TextAppearance.Dialog.Info</item>
+
+        
+        <item name="drawerArrowStyle">@style/Analytics.Theme.DrawerArrow.Dark</item>
+		<item name="android:windowBackground">@color/engine_dark_color_background_window</item>
+	</style>
+	
+	<style name="Analytics.Theme.Black" parent="Theme.AppCompat">
+		<item name="colorPrimaryDark">@color/engine_black_color_secondary</item>
+		<item name="colorPrimary">@color/engine_black_color_primary</item>
+		<item name="colorAccent">@color/engine_black_color_accent</item>
+		<item name="colorControlNormal">@color/engine_black_color_control_normal</item>
+		<item name="colorControlActivated">@color/engine_black_color_control_activated</item>
+		<item name="colorControlHighlight">@color/engine_black_color_control_highlight</item>
+
+		<item name="actionBarWidgetTheme">@null</item>
+        <item name="actionBarTheme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="actionBarPopupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+
+        <item name="actionBarItemBackground">@drawable/engine_selectable_background</item>
+        <item name="android:actionBarItemBackground">@drawable/engine_selectable_background</item>
+
+		<item name="android:textColorPrimary">@color/engine_black_color_textPrimary</item>
+		<item name="android:textColorSecondary">@color/engine_black_color_textSecondary</item>
+
+		<item name="android:textViewStyle">@style/Analytics.Theme.Widget.TextView</item>        
+        <item name="android:actionBarStyle">@style/Analytics.Theme.ActionBar</item>
+        <!-- Custom Style Attribute-->
+        <item name="textFieldStyle">@style/Analytics.Theme.Widget.TextField</item>
+		<!-- drawables -->
+        <item name="action_about">@drawable/ic_action_about_white</item>
+		<item name="action_info">@drawable/ic_action_info_white</item>
+        <item name="action_paste">@drawable/ic_action_paste_white</item>
+        <item name="action_remove">@drawable/ic_action_remove_white</item>
+        <item name="action_search">@drawable/ic_action_search_white</item>
+		<item name="action_home">@drawable/ic_action_home_white</item>
+        <item name="action_copy">@drawable/ic_action_copy_white</item>
+        <item name="action_cut">@drawable/ic_action_cut_white</item>
+        <item name="action_edit">@drawable/ic_action_edit_white</item>
+        <item name="action_undo">@drawable/ic_action_undo_white</item>
+        <item name="action_redo">@drawable/ic_action_redo_white</item>
+        <item name="action_select">@drawable/ic_action_check_white</item>
+		<item name="action_select_all">@drawable/ic_action_check_white</item>
+        <item name="action_archive">@drawable/ic_action_archive_white</item>
+        <item name="action_bookmark">@drawable/ic_action_bookmark_white</item>
+        <item name="action_delete">@drawable/ic_action_delete_white</item>
+        <item name="action_share">@drawable/ic_action_share_white</item>
+		<item name="action_menu">@drawable/ic_action_menu_white</item>
+		<item name="action_more">@drawable/ic_action_more_white</item>
+		<item name="action_refresh">@drawable/ic_action_more_white</item>
+		<item name="action_save">@drawable/ic_action_save_white</item>
+        <item name="action_theme">@drawable/ic_action_more_white</item>
+		<item name="action_folder">@drawable/ic_folder_white</item>
+        <item name="action_folder_scanner">@drawable/ic_folder_search_white</item>
+        <item name="action_folder_manager">@drawable/ic_folder_manager_white</item>
+		<item name="action_folder_server">@drawable/ic_folder_network_white</item>
+		<item name="action_folder_archiver">@drawable/ic_folder_archiver_white</item>
+		<item name="action_folder_client">@drawable/ic_folder_sync_white</item>
+		<item name="action_package">@drawable/ic_package_white</item>
+		<item name="action_website">@drawable/ic_action_web_white</item>
+		<item name="action_wiki">@drawable/ic_action_wikipedia_white</item>
+		<item name="action_github">@drawable/ic_action_github_white</item>
+		<item name="action_settings">@drawable/ic_action_settings_white</item>
+		<item name="action_exit">@drawable/ic_action_exit_white</item>
+
+		<item name="action_tutorial">@drawable/ic_action_tutorial_white</item>
+		<item name="action_tutorial_busybox">@drawable/ic_busybox_white</item>
+		<item name="action_tutorial_debian">@drawable/ic_debian_white</item>
+		<item name="action_tutorial_linux">@drawable/ic_linux_black</item>
+		<item name="action_tutorial_shell">@drawable/ic_bash_white</item>
+		<item name="action_tutorial_github">@drawable/ic_git_white</item>
+
+		<item name="action_google">@drawable/ic_google_white</item>
+		<item name="action_google_maps">@drawable/ic_google_maps_white</item>
+		<item name="action_google_translate">@drawable/ic_google_translate_white</item>
+		<item name="action_google_drive">@drawable/ic_google_drive_white</item>
+		<item name="action_google_chrome">@drawable/ic_google_chrome_white</item>
+		<item name="action_google_drive">@drawable/ic_google_drive_white</item>
+		<item name="action_google_blogger">@drawable/ic_google_blogger_white</item>
+		<item name="action_google_youtube">@drawable/ic_google_youtube_white</item>
+		
+		<item name="action_menu_right">@drawable/ic_chevron_right_white</item>
+		<item name="action_menu_left">@drawable/ic_chevron_left_white</item>
+		<item name="action_add">@drawable/ic_action_add_white</item>
+		<item name="action_send">@drawable/ic_action_send_white</item>
+		<item name="action_alarm">@drawable/ic_action_alarm_white</item>
+		
+        <item name="actionModeBackground">@color/engine_color_blue_A400</item>
+        <item name="windowActionModeOverlay">true</item>
+
+		<item name="windowNoTitle">true</item>
+		<item name="windowActionBar">false</item>  <!-- For 2.x version  -->
+		<!-- Avoid action mode toolbar pushing down terminal content when
+		selecting text on pre-6.0 (non-floating toolbar). -->
+        <item name="android:windowActionModeOverlay">true</item>
+		<item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>	
+		<item name="alertDialogTheme">@style/Analytics.Theme.AlertDialog.Black</item>
+        <!-- Dialog -->
+        <item name="textAppearanceDialogTitle">@style/TextAppearance.Dialog.Title</item>
+        <item name="textAppearanceDialogMessage">@style/TextAppearance.Dialog.Message</item>
+        <item name="textAppearanceDialogInfo">@style/TextAppearance.Dialog.Info</item>
+
+        
+        <item name="drawerArrowStyle">@style/Analytics.Theme.DrawerArrow.Black</item>
+		<item name="android:windowBackground">@color/engine_black_color_background_window</item>
+	</style>
+	
+    <style name="Analytics.Theme.Activity">
+        <item name="colorPrimary">@color/engine_color_analytics_toolbar</item>
+        <item name="colorPrimaryDark">@color/engine_color_analytics_status_bar</item>
+        <item name="colorAccent">@color/engine_color_permission_blue</item>
+        <item name="android:textAllCaps">false</item>
+
+		<item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDisablePreview">true</item>
+		<item name="android:windowBackground">@color/engine_color_analytics_background</item>	
+    </style>
+
+	<style name="Analytics.Theme.Activity.Translucent" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+	<style name="Analytics.Theme.Splash" parent="@style/Analytics.Theme">
+		<item name="windowNoTitle">true</item>
+		<item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@drawable/engine_scriptme_splash_background</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+		<item name="android:statusBarColor" tools:targetApi="lollipop">@android:color/transparent</item>
+    </style>
+
+	<style name="Analytics.Theme.CrashReport" parent="@style/Analytics.Theme">
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/engine_color_permission_blue</item>
+    </style>
+	
+    <style name="Analytics.Theme.Termux" parent="@style/ScriptMe.Theme.Light">
+        <item name="android:statusBarColor">#000000</item>
+        <item name="android:colorPrimary">#FF000000</item>
+        <item name="android:windowBackground">@android:color/black</item>
+
+		<item name="android:textViewStyle">@style/Analytics.Theme.Widget.TextView</item>        
+        <item name="android:actionBarStyle">@style/Analytics.Theme.ActionBar</item>
+        <!-- Custom Style Attribute-->
+        <item name="textFieldStyle">@style/Analytics.Theme.Widget.TextField</item>
+
+        <!-- Seen in buttons on left drawer: -->
+        <item name="android:colorAccent">#212121</item>
+        <item name="android:alertDialogTheme">@style/TermuxAlertDialogStyle</item>
+        <!-- Avoid action mode toolbar pushing down terminal content when
+             selecting text on pre-6.0 (non-floating toolbar). -->
+        <item name="android:windowActionModeOverlay">true</item>
+
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+
+        <!-- https://developer.android.com/training/tv/start/start.html#transition-color -->
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+    </style>
+
+
+	<style name="TermuxAlertDialogStyle" parent="@android:style/Theme.Material.Light.Dialog.Alert">
+	    <!-- Seen in buttons on alert dialog: -->
+        <item name="android:colorAccent">#212121</item>
+    </style>
+
+    <!-- See https://developer.android.com/training/material/theme.html for how to customize the Material theme. -->
+    <!-- NOTE: Cannot use "Light." since it hides the terminal scrollbar on the default black background. -->
+    <style name="Analytics.Theme.Termux.Black" parent="@style/ScriptMe.Theme.Light">
+        <item name="android:statusBarColor">#000000</item>
+        <item name="android:colorPrimary">#FF000000</item>
+        <item name="android:windowBackground">@android:color/black</item>
+
+		<item name="android:textViewStyle">@style/Analytics.Theme.Widget.TextView</item>        
+        <item name="android:actionBarStyle">@style/Analytics.Theme.ActionBar</item>
+        <!-- Custom Style Attribute-->
+        <item name="textFieldStyle">@style/Analytics.Theme.Widget.TextField</item>
+
+        <!-- Seen in buttons on left drawer: -->
+        <item name="android:colorAccent">#FDFDFD</item>
+        <!-- Avoid action mode toolbar pushing down terminal content when
+             selecting text on pre-6.0 (non-floating toolbar). -->
+        <item name="android:windowActionModeOverlay">true</item>
+
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+
+        <!-- https://developer.android.com/training/tv/start/start.html#transition-color -->
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+    </style>
+</resources>

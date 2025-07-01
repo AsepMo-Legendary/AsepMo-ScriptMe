@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- Color Background -->
+	<color name="engine_color_background_primary">#1abc9c</color>
+	<color name="engine_color_background_secondary">#2c3e50</color>
+	<color name="engine_color_background_success">#28a745</color>
+	<color name="engine_color_background_info">#17a2b8</color>
+	<color name="engine_color_background_warning">#ffc107</color>
+	<!-- Color Tab -->
+    <color name="engine_color_tab_title">#d6f1f9</color>
+    <color name="engine_color_tab_title_selected">#ffffff</color>
+    <color name="engine_color_tab_background">#FF2C3E50</color>
+    <color name="engine_color_tab_background_selected">#FF1A252F</color>
+	<!-- Color Shimmer -->
+	<color name="engine_color_shimmer">#a2878787</color>
+	<color name="engine_color_shimmer_background">#b1b1b1</color>
+	<!-- Color Analytics -->
+	<color name="engine_color_analytics_status_bar">#FF1A252F</color> 
+    <color name="engine_color_analytics_toolbar">#FF2C3E50</color>
+    <color name="engine_color_analytics_cover">@color/engine_color_background_primary</color>
+    <color name="engine_color_analytics_background">#FF2C3E50</color>
+	<!-- Color Analytics Permission And Crush Report -->
+	<color name="engine_color_permission_blue">#4285f4</color>
+    <color name="engine_color_permission_white">#FFFFFF</color>
+    <color name="engine_color_btn_selected">#33969696</color>
+    <color name="engine_color_btn_selected_dark">#40CBCBCB</color>
+    <color name="engine_color_divider_black">#10000000</color>
+    <color name="engine_color_divider_white">#10FFFFFF</color>
+    <color name="engine_color_edittext_error">#DD2C00</color>
+	<!-- Color Content -->
+	<color name="engine_color_primary">#2E7D32</color>
+	<color name="engine_color_secondary">#388E3C</color>
+	<color name="engine_color_accent">#4CAF50</color>
+	<color name="engine_color_textPrimary">#212121</color>
+	<color name="engine_color_textSecondary">#727272</color>
+	<color name="engine_color_text">#FFFFFF</color>
+	<color name="engine_color_icons">#FFFFFF</color>
+	<color name="engine_color_divider">#B6B6B6</color>
+	<color name="engine_color_control_normal">@color/engine_color_textSecondary</color>
+	<color name="engine_color_control_activated">@color/engine_color_accent</color>
+	<color name="engine_color_control_highlight">@color/engine_color_divider</color>
+	<color name="engine_color_button_normal">#19C1B2</color>
+	<color name="engine_color_switch_thumbNormal">#19C1B2</color>
+	<color name="engine_color_statusBar">@color/engine_color_secondary</color>
+	<color name="engine_color_navigationBar">@color/engine_color_secondary</color>
+	<color name="engine_color_background">#E0E0E0</color>
+	<color name="engine_color_background_drawer">#FFfafafa</color>
+	<color name="engine_color_background_row">#F2F2F2</color>
+	<color name="engine_color_background_window">#C0C3C6</color>
+	<!-- Color Light Application -->
+	<color name="engine_light_color_primary">#FFFFFFFF</color>
+	<color name="engine_light_color_secondary">#FF424242</color>
+	<color name="engine_light_color_accent">#19C1B2</color>
+	<color name="engine_light_color_textPrimary">#212121</color>
+	<color name="engine_light_color_textSecondary">#B2B2B2</color>
+	<color name="engine_light_color_text">#212121</color>
+	<color name="engine_light_color_icons">#212121</color>
+	<color name="engine_light_color_divider">#1E1E1E</color>
+	<color name="engine_light_color_control_normal">@color/engine_light_color_textSecondary</color>
+	<color name="engine_light_color_control_activated">@color/engine_light_color_accent</color>
+	<color name="engine_light_color_control_highlight">@color/engine_light_color_divider</color>
+	<color name="engine_light_color_button_normal">#19C1B2</color>
+	<color name="engine_light_color_switch_thumbNormal">#19C1B2</color>
+	<color name="engine_light_color_statusBar">@color/engine_light_color_secondary</color>
+	<color name="engine_light_color_navigationBar">@color/engine_light_color_secondary</color>
+	<color name="engine_light_color_background">#E0E0E0</color>
+	<color name="engine_light_color_background_drawer">#FFfafafa</color>
+	<color name="engine_light_color_background_row">#e0e0e0</color>
+	<color name="engine_light_color_background_window">#FFFFFFFF</color>
+	<!-- Color Dark Application -->
+	<color name="engine_dark_color_primary">#131313</color>
+	<color name="engine_dark_color_secondary">#090909</color>
+	<color name="engine_dark_color_accent">#e0e0e0</color>
+	<color name="engine_dark_color_textPrimary">#FFFFFF</color>
+	<color name="engine_dark_color_textSecondary">#B2B2B2</color>
+	<color name="engine_dark_color_text">#FFFFFF</color>
+	<color name="engine_dark_color_icons">#FFFFFF</color>
+	<color name="engine_dark_color_divider">#1E1E1E</color>
+	<color name="engine_dark_color_control_normal">@color/engine_dark_color_secondary</color>
+	<color name="engine_dark_color_control_activated">@color/engine_dark_color_accent</color>
+	<color name="engine_dark_color_control_highlight">@color/engine_dark_color_divider</color>
+	<color name="engine_dark_color_button_normal">#19C1B2</color>
+	<color name="engine_dark_color_switch_thumbNormal">#19C1B2</color>
+	<color name="engine_dark_color_statusBar">@color/engine_dark_color_secondary</color>
+	<color name="engine_dark_color_navigationBar">@color/engine_dark_color_secondary</color>
+	<color name="engine_dark_color_background">#424242</color>
+	<color name="engine_dark_color_background_drawer">#FFfafafa</color>
+	<color name="engine_dark_color_background_row">#34474F</color>
+	<color name="engine_dark_color_background_window">#212121</color>
+	<!-- Color Black Application -->
+	<color name="engine_black_color_primary">#000000</color>
+	<color name="engine_black_color_secondary">#000000</color>
+	<color name="engine_black_color_accent">#e0e0e0</color>
+	<color name="engine_black_color_textPrimary">#FFFFFF</color>
+	<color name="engine_black_color_textSecondary">#B2B2B2</color>
+	<color name="engine_black_color_text">#FFFFFF</color>
+	<color name="engine_black_color_icons">#FFFFFF</color>
+	<color name="engine_black_color_divider">#e0e0e0</color>
+	<color name="engine_black_color_control_normal">@color/engine_black_color_textSecondary</color>
+	<color name="engine_black_color_control_activated">@color/engine_black_color_accent</color>
+	<color name="engine_black_color_control_highlight">@color/engine_black_color_divider</color>
+	<color name="engine_black_color_button_normal">#19C1B2</color>
+	<color name="engine_black_color_switchThumb_normal">#19C1B2</color>
+	<color name="engine_black_color_statusBar">@color/engine_black_color_secondary</color>
+	<color name="engine_black_color_navigationBar">@color/engine_black_color_secondary</color>
+	<color name="engine_black_color_background">#000000</color>
+	<color name="engine_black_color_background_drawer">#000a0a0a</color>
+	<color name="engine_black_color_background_row">#000a0a0a</color>
+	<color name="engine_black_color_background_window">#000000</color>
+	
+
+    <color name="engine_explore_type_folder">#ffc661</color>
+    <color name="engine_explore_type_media">#f06292</color>
+    <color name="engine_explore_type_apk">#a4c439</color>
+    <color name="engine_explore_type_archive">#546813</color>
+    <color name="engine_explore_type_code">#00bfa5</color>
+    <color name="engine_explore_type_text">#e06055</color>
+    <color name="engine_explore_type_file">#9e9e9e</color> 
+    <color name="engine_color_disabled">#44000000</color>
+    <color name="engine_color_error">#E7492E</color>
+    
+</resources>

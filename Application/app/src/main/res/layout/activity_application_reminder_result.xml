@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fitsSystemWindows="true"
+	android:background="@color/engine_color_black_translucent2"
+	android:id="@+id/coordinator_layout"
+	tools:context="com.appme.story.application.ApplicationActivity">
+
+	<android.support.design.widget.AppBarLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:theme="?attr/actionBarTheme">
+
+		<android.support.v7.widget.Toolbar
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:background="?attr/colorPrimary"
+			app:popupTheme="?attr/actionBarPopupTheme"/>
+
+	</android.support.design.widget.AppBarLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/toDoReminderTextViewBody"
+				android:layout_width="match_parent"
+				android:layout_height="150dp"
+				android:layout_below="@id/toolbar"
+				android:background="?attr/colorPrimary"
+				android:ellipsize="middle"
+				android:gravity="center|start"
+				android:paddingLeft="16dp"
+				android:text="@string/engine_reminder_example"
+				android:textColor="@color/engine_light_color_text"
+				android:textSize="20sp"/>
+
+			<Button
+				android:id="@+id/toDoReminderRemoveButton"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:background="@drawable/engine_button_pressed_background"
+				android:text="@string/engine_reminder_remove"
+				android:textColor="@android:color/white"/>
+
+			<LinearLayout
+				android:id="@+id/toDoReminderLinearLayout"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_above="@id/toDoReminderRemoveButton"
+				android:layout_below="@id/toDoReminderTextViewBody"
+				android:gravity="start"
+				android:orientation="horizontal"
+				android:paddingTop="24dp">
+
+				<TextView
+					android:id="@+id/reminderViewSnoozeTextView"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="16dp"
+					android:layout_marginRight="2dp"
+					android:layout_weight="1.5"
+					android:drawableLeft="@drawable/ic_alarm_snooze"
+					android:drawablePadding="8dp"
+					android:gravity="start"
+					android:padding="8dp"
+					android:text="@string/engine_reminder_snooze"
+					android:textSize="16sp"/>
+
+				<com.scriptme.story.widget.MaterialSpinner
+					android:id="@+id/todoReminderSnoozeSpinner"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="2dp"
+					android:layout_marginRight="16dp"
+					android:layout_weight="1.5"
+					app:ms_highlightColor="?attr/colorAccent"/>
+
+			</LinearLayout>
+
+		</RelativeLayout>
+
+	</LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+

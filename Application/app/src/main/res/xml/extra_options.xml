@@ -1,0 +1,51 @@
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:key="light_theme"
+        android:title="@string/engine_editor_light_theme"
+        android:defaultValue="false" />
+
+    <CheckBoxPreference
+        android:key="suggestion_active"
+        android:title="@string/engine_editor_keyboard_suggestions_and_swipe"
+        android:defaultValue="false" />
+
+    <CheckBoxPreference
+        android:key="auto_save"
+        android:title="@string/engine_editor_auto_save"
+        android:defaultValue="false" />
+
+    <CheckBoxPreference
+        android:key="autoencoding"
+        android:title="@string/engine_editor_enable_auto_encoding"
+        android:defaultValue="true" />
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+    <ListPreference
+        android:key="editor_encoding"
+        android:title="@string/engine_editor_encoding"
+        android:defaultValue="UTF-8"
+        android:entries="@array/engine_editor_encodings"
+        android:entryValues="@array/engine_editor_encodings"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null" />
+
+    <CheckBoxPreference
+        android:key="ignore_back_button"
+        android:title="@string/engine_editor_ignore_back_button"
+        android:defaultValue="false"/>
+
+    <CheckBoxPreference
+        android:key="page_system_active"
+        android:title="@string/engine_editor_split_text_if_too_long"
+        android:defaultValue="true"/>
+
+    <CheckBoxPreference
+        android:key="send_error_reports"
+        android:title="@string/engine_editor_send_error_reports"
+        android:defaultValue="true" />
+
+</PreferenceScreen>

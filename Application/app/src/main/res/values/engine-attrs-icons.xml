@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- drawables -->
+	<attr name="action_about" format="reference" />
+    <attr name="action_copy" format="reference" />
+    <attr name="action_cut" format="reference" />
+    <attr name="action_edit" format="reference" />
+    <attr name="action_info" format="reference" />
+    <attr name="action_paste" format="reference" />
+    <attr name="action_bookmark" format="reference" />
+    <attr name="action_delete" format="reference" />
+    <attr name="action_remove" format="reference" />
+    <attr name="action_search" format="reference" />
+    <attr name="action_share" format="reference" />
+    <attr name="action_archive" format="reference" />
+    <attr name="action_select" format="reference" />
+	<attr name="action_select_all" format="reference" />
+	<attr name="action_settings" format="reference" />
+	<attr name="action_refresh" format="reference" />
+	<attr name="action_exit" format="reference" />
+	<attr name="action_home" format="reference" />
+	<attr name="action_github" format="reference" />
+	<attr name="action_website" format="reference" />
+	<attr name="action_menu" format="reference" />
+	<attr name="action_options_menu" format="reference" />
+	<attr name="action_more" format="reference" />
+	<attr name="action_wiki" format="reference" />
+	<attr name="action_folder" format="reference" />
+	<attr name="action_folder_scanner" format="reference" />
+	<attr name="action_folder_manager" format="reference" />
+	<attr name="action_folder_server" format="reference" />
+	<attr name="action_folder_archiver" format="reference" />
+	<attr name="action_folder_client" format="reference" />
+	<attr name="action_google" format="reference" />
+	<attr name="action_google_maps" format="reference" />
+	<attr name="action_google_translate" format="reference" />
+	<attr name="action_google_chrome" format="reference" />
+	<attr name="action_google_drive" format="reference" />
+	<attr name="action_google_blogger" format="reference" />
+	<attr name="action_google_youtube" format="reference" />
+	<attr name="action_tutorial" format="reference" />
+	<attr name="action_tutorial_debian" format="reference" />
+	<attr name="action_tutorial_busybox" format="reference" />
+	<attr name="action_tutorial_linux" format="reference" />
+	<attr name="action_tutorial_shell" format="reference" />
+	<attr name="action_tutorial_github" format="reference" />
+	<attr name="action_package" format="reference" />
+	<attr name="action_file" format="reference" />
+	<attr name="action_file_tree" format="reference" />
+	<attr name="action_theme" format="reference" />
+	<attr name="action_bug_report" format="reference" />
+	<attr name="action_close" format="reference" />
+	<attr name="action_menu_right" format="reference" />
+	<attr name="action_menu_left" format="reference" />
+	<attr name="action_add" format="reference" />
+    <attr name="action_bookmark_off" format="reference" />
+    <attr name="action_save" format="reference" />
+    <attr name="action_undo" format="reference" />
+    <attr name="action_redo" format="reference" />
+    <attr name="action_send" format="reference" />
+    <attr name="action_alarm" format="reference" />
+    
+</resources>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:background="@color/engine_light_color_background_drawer"
+	android:paddingTop="10dp">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@id/drawer_buttons"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@id/drawer_button_go_pro"
+			android:layout_width="match_parent"
+			android:layout_height="72dp"
+			android:paddingStart="16dp"
+			android:paddingEnd="16dp"
+			android:paddingLeft="16dp"
+			android:paddingRight="16dp"
+			android:gravity="center_vertical"
+			android:textSize="12sp"
+			android:clickable="true"
+			android:background="?selectableItemBackground"
+			android:textColor="@color/engine_color_accent_green"/>
+
+		<android.support.v7.widget.SwitchCompat
+			android:gravity="center_vertical"
+			android:layout_width="match_parent"
+			android:layout_height="56dp"
+			android:text="@string/engine_editor_line_numbers"
+			android:textSize="12sp"
+			android:id="@id/switch_line_numbers"
+			android:layout_gravity="center_horizontal"
+			android:paddingEnd="16dp"
+			android:paddingStart="16dp"
+			android:paddingLeft="16dp"
+			android:paddingRight="16dp"
+			android:textColor="@color/engine_light_color_text"/>
+
+		<android.support.v7.widget.SwitchCompat
+			android:gravity="center_vertical"
+			android:layout_width="match_parent"
+			android:layout_height="56dp"
+			android:text="@string/engine_editor_menu_syntax_highlight"
+			android:textSize="12sp"
+			android:id="@id/switch_syntax"
+			android:layout_gravity="center_horizontal"
+			android:paddingEnd="16dp"
+			android:paddingStart="16dp"
+			android:paddingLeft="16dp"
+			android:paddingRight="16dp"
+			android:textColor="@color/engine_light_color_text"/>
+
+		<android.support.v7.widget.SwitchCompat
+			android:gravity="center_vertical"
+			android:layout_width="match_parent"
+			android:layout_height="56dp"
+			android:text="@string/engine_editor_wrap_content"
+			android:textSize="12sp"
+			android:id="@id/switch_wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:paddingEnd="16dp"
+			android:paddingStart="16dp"
+			android:paddingLeft="16dp"
+			android:paddingRight="16dp"
+			android:textColor="@color/engine_light_color_text"/>
+
+		<android.support.v7.widget.SwitchCompat
+			android:gravity="center_vertical"
+			android:layout_width="match_parent"
+			android:layout_height="56dp"
+			android:text="@string/engine_editor_use_monospace"
+			android:textSize="12sp"
+			android:id="@id/switch_monospace"
+			android:layout_gravity="center_horizontal"
+			android:paddingEnd="16dp"
+			android:paddingStart="16dp"
+			android:paddingLeft="16dp"
+			android:paddingRight="16dp"
+			android:textColor="@color/engine_light_color_text"/>
+
+		<android.support.v7.widget.SwitchCompat
+			android:gravity="center_vertical"
+			android:layout_width="match_parent"
+			android:layout_height="56dp"
+			android:text="@string/engine_editor_read_only"
+			android:textSize="12sp"
+			android:id="@id/switch_read_only"
+			android:layout_gravity="center_horizontal"
+			android:paddingEnd="16dp"
+			android:paddingStart="16dp"
+			android:paddingLeft="16dp"
+			android:paddingRight="16dp"
+			android:textColor="@color/engine_light_color_text"/>
+
+		<TextView
+			android:id="@id/drawer_button_font_size"
+			android:layout_width="match_parent"
+			android:layout_height="56dp"
+			android:text="@string/engine_editor_font_size"
+			android:paddingStart="16dp"
+			android:paddingEnd="16dp"
+			android:paddingLeft="16dp"
+			android:paddingRight="16dp"
+			android:gravity="center_vertical"
+			android:textSize="12sp"
+			android:clickable="true"
+			android:background="?selectableItemBackground"
+			android:textColor="@color/engine_light_color_text"/>
+
+		<TextView
+			android:id="@id/drawer_button_extra_options"
+			android:layout_width="match_parent"
+			android:layout_height="56dp"
+			android:text="@string/engine_editor_extra_options"
+			android:paddingStart="16dp"
+			android:paddingEnd="16dp"
+			android:paddingLeft="16dp"
+			android:paddingRight="16dp"
+			android:gravity="center_vertical"
+			android:textSize="12sp"
+			android:clickable="true"
+			android:background="?selectableItemBackground"
+			android:textColor="@color/engine_light_color_text"
+			android:drawableRight="@drawable/abc_spinner_mtrl_am_alpha"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/other_options"
+			android:visibility="gone"
+			android:orientation="vertical">
+
+			<android.support.v7.widget.SwitchCompat
+				android:gravity="center_vertical"
+				android:layout_width="match_parent"
+				android:layout_height="56dp"
+				android:text="@string/engine_editor_light_theme"
+				android:textSize="12sp"
+				android:id="@id/switch_light_theme"
+				android:layout_gravity="center_horizontal"
+				android:paddingEnd="16dp"
+				android:paddingStart="16dp"
+				android:paddingLeft="16dp"
+				android:paddingRight="16dp"
+				android:textColor="@color/engine_light_color_text"/>
+
+			<android.support.v7.widget.SwitchCompat
+				android:gravity="center_vertical"
+				android:layout_width="match_parent"
+				android:layout_height="56dp"
+				android:text="@string/engine_editor_keyboard_suggestions_and_swipe"
+				android:textSize="12sp"
+				android:id="@id/switch_suggestions_active"
+				android:layout_gravity="center_horizontal"
+				android:paddingEnd="16dp"
+				android:paddingStart="16dp"
+				android:paddingLeft="16dp"
+				android:paddingRight="16dp"
+				android:textColor="@color/engine_light_color_text"/>
+
+			<android.support.v7.widget.SwitchCompat
+				android:gravity="center_vertical"
+				android:layout_width="match_parent"
+				android:layout_height="56dp"
+				android:text="@string/engine_editor_auto_save"
+				android:textSize="12sp"
+				android:id="@id/switch_auto_save"
+				android:layout_gravity="center_horizontal"
+				android:paddingEnd="16dp"
+				android:paddingStart="16dp"
+				android:paddingLeft="16dp"
+				android:paddingRight="16dp"
+				android:textColor="@color/engine_light_color_text"/>
+
+			<TextView
+				android:id="@id/drawer_button_encoding"
+				android:layout_width="match_parent"
+				android:layout_height="56dp"
+				android:text="@string/engine_editor_encoding"
+				android:paddingStart="16dp"
+				android:paddingEnd="16dp"
+				android:paddingLeft="16dp"
+				android:paddingRight="16dp"
+				android:gravity="center_vertical"
+				android:textSize="12sp"
+				android:clickable="true"
+				android:background="?selectableItemBackground"
+				android:textColor="@color/engine_light_color_text"/>
+
+			<android.support.v7.widget.SwitchCompat
+				android:gravity="center_vertical"
+				android:layout_width="match_parent"
+				android:layout_height="56dp"
+				android:text="@string/engine_editor_ignore_back_button"
+				android:textSize="12sp"
+				android:id="@id/switch_ignore_backbutton"
+				android:layout_gravity="center_horizontal"
+				android:paddingEnd="16dp"
+				android:paddingStart="16dp"
+				android:paddingLeft="16dp"
+				android:paddingRight="16dp"
+				android:textColor="@color/engine_light_color_text"/>
+
+			<android.support.v7.widget.SwitchCompat
+				android:gravity="center_vertical"
+				android:layout_width="match_parent"
+				android:layout_height="56dp"
+				android:text="@string/engine_editor_split_text_if_too_long"
+				android:textSize="12sp"
+				android:id="@id/switch_page_system"
+				android:layout_gravity="center_horizontal"
+				android:paddingEnd="16dp"
+				android:paddingStart="16dp"
+				android:paddingLeft="16dp"
+				android:paddingRight="16dp"
+				android:textColor="@color/engine_light_color_text"/>
+
+			<android.support.v7.widget.SwitchCompat
+				android:gravity="center_vertical"
+				android:layout_width="match_parent"
+				android:layout_height="56dp"
+				android:text="@string/engine_editor_send_error_reports"
+				android:textSize="12sp"
+				android:id="@id/switch_send_error_reports"
+				android:layout_gravity="center_horizontal"
+				android:paddingEnd="16dp"
+				android:paddingStart="16dp"
+				android:paddingLeft="16dp"
+				android:paddingRight="16dp"
+				android:textColor="@color/engine_light_color_text"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</ScrollView>
+

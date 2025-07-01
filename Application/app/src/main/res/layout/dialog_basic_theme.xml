@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<android.support.v7.widget.CardView
+		android:id="@+id/basic_theme_card"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:cardCornerRadius="2dp">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/basic_theme_title"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/engine_dark_color_primary"
+				android:padding="@dimen/engine_dp_24"
+				android:text="@string/engine_settings_basic_theme"
+				android:textColor="@color/engine_dark_color_textPrimary"
+				android:textSize="@dimen/engine_sp_18"
+				android:textStyle="bold"/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:paddingTop="@dimen/engine_dp_16"
+				android:paddingLeft="@dimen/engine_dp_16"
+				android:paddingRight="@dimen/engine_dp_16">
+
+				<LinearLayout
+					android:id="@+id/ll_white_basic_theme"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:padding="10dp"
+					android:weightSum="10"
+					android:background="@color/engine_light_color_background">
+
+					<android.support.v7.widget.AppCompatImageView
+						android:id="@+id/white_basic_theme_icon"
+						android:layout_width="0dp"
+						android:layout_height="20dp"
+						android:layout_gravity="center_vertical"
+						android:layout_weight="2"
+						app:srcCompat="@drawable/ic_invert_colors"
+						app:tint="@color/engine_color_grey_600"/>
+
+					<LinearLayout
+						android:layout_width="0dp"
+						android:layout_height="20dp"
+						android:layout_weight="6"
+						android:orientation="vertical">
+
+						<TextView
+							android:id="@+id/white_basic_theme_item"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/engine_settings_white_basic_theme"
+							android:textColor="@color/engine_color_grey_600"
+							android:layout_gravity="center_vertical"
+							android:textSize="14sp"/>
+
+					</LinearLayout>
+
+					<android.support.v7.widget.AppCompatImageView
+						android:id="@+id/white_basic_theme_select"
+						android:layout_width="0dp"
+						android:layout_height="20dp"
+						android:layout_gravity="center_vertical"
+						android:layout_weight="2"
+						app:srcCompat="@drawable/ic_action_check_white"
+						app:tint="@color/engine_color_grey_600"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/ll_dark_basic_theme"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:padding="10dp"
+					android:weightSum="10"
+					android:clickable="true"
+					android:background="@color/engine_dark_color_background">
+
+					<android.support.v7.widget.AppCompatImageView
+						android:id="@+id/dark_basic_theme_icon"
+						android:layout_width="0dp"
+						android:layout_height="20dp"
+						android:layout_gravity="center_vertical"
+						android:layout_weight="2"
+						app:srcCompat="@drawable/ic_invert_colors"
+						app:tint="@color/engine_color_grey_600"/>
+
+					<LinearLayout
+						android:layout_width="0dp"
+						android:layout_height="20dp"
+						android:layout_weight="6"
+						android:orientation="vertical">
+
+						<TextView
+							android:id="@+id/dark_basic_theme_item"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/engine_settings_dark_basic_theme"
+							android:textColor="@color/engine_color_grey_600"
+							android:layout_gravity="center_vertical"
+							android:textSize="14sp"/>
+
+					</LinearLayout>
+
+					<android.support.v7.widget.AppCompatImageView
+						android:id="@+id/dark_basic_theme_select"
+						android:layout_width="0dp"
+						android:layout_height="20dp"
+						android:layout_gravity="center_vertical"
+						android:layout_weight="2"
+						app:srcCompat="@drawable/ic_action_check_white"
+						app:tint="@color/engine_color_grey_600"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/ll_dark_amoled_basic_theme"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:padding="10dp"
+					android:weightSum="10"
+					android:clickable="true"
+					android:background="@color/engine_black_color_background">
+
+					<android.support.v7.widget.AppCompatImageView
+						android:id="@+id/dark_amoled_basic_theme_icon"
+						android:layout_width="0dp"
+						android:layout_height="20dp"
+						android:layout_gravity="center_vertical"
+						android:layout_weight="2"
+						app:srcCompat="@drawable/ic_invert_colors"
+						app:tint="@color/engine_color_grey_600"/>
+
+					<LinearLayout
+						android:layout_width="0dp"
+						android:layout_height="20dp"
+						android:layout_weight="6"
+						android:orientation="vertical">
+
+						<TextView
+							android:id="@+id/dark_amoled_basic_theme_item"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/engine_settings_dark_amoled_basic_theme"
+							android:textColor="@color/engine_color_grey_600"
+							android:layout_gravity="center_vertical"
+							android:textSize="14sp"/>
+
+					</LinearLayout>
+
+					<android.support.v7.widget.AppCompatImageView
+						android:id="@+id/dark_amoled_basic_theme_select"
+						android:layout_width="0dp"
+						android:layout_height="20dp"
+						android:layout_gravity="center_vertical"
+						android:layout_weight="2"
+						app:srcCompat="@drawable/ic_action_check_white"
+						app:tint="@color/engine_color_grey_600"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</android.support.v7.widget.CardView>
+
+</LinearLayout>
+

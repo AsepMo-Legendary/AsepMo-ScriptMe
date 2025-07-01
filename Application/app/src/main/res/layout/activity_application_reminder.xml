@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/engine_color_black_translucent2"
+	android:id="@+id/coordinator_layout"
+	tools:context="com.appme.story.application.ApplicationActivity">
+
+	<android.support.design.widget.AppBarLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:theme="?attr/actionBarTheme">
+
+		<android.support.v7.widget.Toolbar
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:background="?attr/colorPrimary"
+			app:popupTheme="?attr/actionBarPopupTheme"/>
+
+	</android.support.design.widget.AppBarLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+		<LinearLayout
+			android:id="@+id/toDoEmptyView"
+			android:orientation="vertical"
+			android:gravity="center"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<ImageView
+				android:src="@drawable/empty_view_bg"
+				android:layout_width="100dp"
+				android:layout_height="100dp"/>
+
+			<TextView
+				android:text="@string/engine_reminder_no_to_dos"
+				android:textColor="?attr/android:textColorPrimary"
+				android:textSize="16sp"
+				android:paddingTop="4dp"
+				android:paddingBottom="8dp"
+				android:gravity="center"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"/>
+
+		</LinearLayout>
+
+		<com.scriptme.story.engine.widget.RecyclerViewEmptySupport
+			android:id="@+id/toDoRecyclerView"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"/>
+
+	</LinearLayout>
+
+	<android.support.design.widget.FloatingActionButton
+		android:src="?attr/action_add"
+		android:id="@+id/addToDoItemFAB"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="16dp"
+		android:layout_gravity="bottom|right|end"/>
+
+</android.support.design.widget.CoordinatorLayout>
+

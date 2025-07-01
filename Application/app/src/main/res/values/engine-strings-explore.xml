@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="engine_explore_no_data">No Data</string>
+    <string name="engine_explore_filter_by_name">Filter by Name</string>
+	<string name="engine_explore_show_hidden_files">Show hidden files</string>
+    <string name="engine_explore_sort_by_datetime">Sort by Date</string>
+    <string name="engine_explore_sort_by_name">Sort by Name</string>
+    <string name="engine_explore_sort_by_size">Sort by Size</string>
+    <string name="engine_explore_sort_by_type">Sort by Type</string>
+    <string name="engine_explore_home">Home</string>
+	<string name="engine_explore_create_folder">Create Folder :</string>
+    <string name="engine_explore_paste">Paste</string>
+    <string name="engine_explore_file_name">File Name:</string>
+    <string name="engine_explore_file_encoding">Encoding:</string>
+    <string name="engine_explore_file_save">Save</string>
+    <string name="engine_explore_root_path">Root</string>
+    <string name="engine_explore_select">Select</string>
+	<string name="engine_explore_select_all">Select all</string>
+	<string name="engine_explore_select_folder">Select folder</string>
+	<string name="engine_explore_select_file_or_folder">Select file or folder</string>
+	<string name="engine_explore_select_file">Select file</string>
+    <string name="engine_explore_select_path">Select path</string>
+	<string name="engine_explore_selected_x_items">Selected %d Items</string>
+	<string name="engine_explore_cancel_select_all">Deselect All</string>
+	<string name="engine_explore_can_not_create_folder">Can not create folder</string>
+    <string name="engine_explore_can_not_share_x">Can not share file: %s</string>
+	<string name="engine_explore_copy">Copy</string>
+	<string name="engine_explore_cut">Cut</string>
+    <string name="engine_explore_delete">Delete</string>
+    <string name="engine_explore_rename">Rename</string>
+    <string name="engine_explore_rename_fail">Rename failure</string>
+    <string name="engine_explore_share">Share</string>
+	<string name="engine_explore_untitled_file_name">untitled.txt</string>
+	<string name="engine_explore_auto_detection_encoding">Auto detection encoding</string>
+    <string name="engine_explore_illegal_filename">illegal filename</string>
+    <string name="engine_explore_unknown_path">unknown path</string>
+    <string name="engine_explore_override_file_prompt">%s exists，do you override it？</string>
+	<string name="engine_explore_encoding">Encoding</string>
+	<string name="engine_explore_cannot_be_empty">Can not be empty</string>
+	<string name="engine_explore_cannot_read_file">Can not read file: %s</string>
+	<string name="engine_explore_cannot_read_folder">Can not read folder</string>
+	<string name="engine_explore_x_items_completed">%d items Completed</string>
+    <string name="engine_explore_x_items_completed_and_error_x">%1$d items Completed, but has some items occur error: %2$s</string>
+   
+	
+</resources>
